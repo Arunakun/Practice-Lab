@@ -33,6 +33,18 @@
 
             Console.WriteLine(team + " was founded in 2026.");
             Console.WriteLine(team + " currently consists of 1 member: " + nickname);
+
+            // Exercise 5
+            Console.WriteLine();
+            Console.Write("Alright, " + nickname + ", time to give me a display name: ");
+            string displayName = Console.ReadLine();
+            
+            Console.WriteLine(displayName + " is the display name you chose.");
+            Console.WriteLine("Unfortunately, " + displayName + " is already taken..");
+            Console.Write("Please write a new display name: ");
+            displayName = Console.ReadLine();
+
+            Console.WriteLine(displayName + " is available and has now been saved.");
         }
     }
 }
