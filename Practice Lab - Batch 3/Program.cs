@@ -14,6 +14,19 @@
             Console.WriteLine("Lowest measured temperature: " + lowestTemp);
             Console.WriteLine("Average temperature during December 1999: " + averageTemp);
             Console.WriteLine("Highest measured temperature: " + highestTemp);
+
+            // Exercise 2
+            int roundOnePoints = 7;
+            int roundTwoPoints = 12;
+            int totalPoints = roundOnePoints + roundTwoPoints;
+
+            Console.WriteLine();
+            Console.WriteLine("Scoreboard - Lone Wolf");
+            Console.WriteLine();
+            Console.WriteLine("Round 1: " + roundOnePoints + " points");
+            Console.WriteLine("Round 2: " + roundTwoPoints + " points");
+            Console.WriteLine();
+            Console.WriteLine("Final score: " + totalPoints + " points!");
         }
     }
 }
