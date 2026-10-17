@@ -37,6 +37,15 @@
             Console.WriteLine("Verde Avenue Venue has " + totalSeats + " seats in total.");
             Console.WriteLine("Currently, " + bookedSeats + " seats are booked for the Lord of the Rings Marathon.");
             Console.WriteLine("This leaves " + freeSeats + " available seats.");
+
+            // Exercise 4
+            int stickerPacks = 7;
+            int stickersPerPack = 17;
+            int totalStickers = stickerPacks * stickersPerPack;
+
+            Console.WriteLine();
+            Console.WriteLine("If I open up all of my sticker packs, I'll end up with " + totalStickers + " stickers.");
+            Console.WriteLine("That would be " + totalStickers + " more stickers than I had before.");
         }
     }
 }
