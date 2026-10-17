@@ -46,6 +46,33 @@
             Console.WriteLine();
             Console.WriteLine("If I open up all of my sticker packs, I'll end up with " + totalStickers + " stickers.");
             Console.WriteLine("That would be " + totalStickers + " more stickers than I had before.");
+
+            // Exercise 5
+            Console.WriteLine();
+            Console.Write("Dear Player. Please type your full name: ");
+            string playerName = Console.ReadLine();
+            int currentScore = 0;
+            int pointsGained = 17;
+            int pointsLost = 5;
+
+            Console.WriteLine();
+            Console.WriteLine("Let the games begin");
+            Console.WriteLine("Your name: " + playerName);
+            Console.WriteLine("Your score: " + currentScore);
+
+            currentScore += pointsGained;
+
+            Console.WriteLine();
+            Console.WriteLine("Round 1 - Updated scoreboard");
+            Console.WriteLine("Your name: " + playerName);
+            Console.WriteLine("Current score: " + currentScore);
+
+            currentScore -= pointsLost;
+
+            Console.WriteLine();
+            Console.WriteLine("End - post-game summary");
+            Console.WriteLine("Your name: " + playerName);
+            Console.WriteLine("Final score: " + currentScore);
         }
     }
 }
