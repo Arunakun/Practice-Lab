@@ -27,6 +27,16 @@
             Console.WriteLine("Round 2: " + roundTwoPoints + " points");
             Console.WriteLine();
             Console.WriteLine("Final score: " + totalPoints + " points!");
+
+            // Exercise 3
+            int totalSeats = 155;
+            int bookedSeats = 58;
+            int freeSeats = totalSeats - bookedSeats;
+
+            Console.WriteLine();
+            Console.WriteLine("Verde Avenue Venue has " + totalSeats + " seats in total.");
+            Console.WriteLine("Currently, " + bookedSeats + " seats are booked for the Lord of the Rings Marathon.");
+            Console.WriteLine("This leaves " + freeSeats + " available seats.");
         }
     }
 }
