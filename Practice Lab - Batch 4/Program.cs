@@ -65,6 +65,19 @@
             Console.WriteLine("So, the box initially had " + pensBox + " pens in the box before you opened it...");
             Console.WriteLine("...and you gave " + pensHandedOut + " pens away to strangers...");
             Console.WriteLine("That means, you only have " + remainingPens + " left for yourself.");
+
+            // Exercise 6
+            Console.Write("\nThink of a grid. Now, tell me how many rows it has: ");
+            string userInputRows = Console.ReadLine();
+            Console.Write("Now tell me how many columns it has: ");
+            string userInputColumns = Console.ReadLine();
+
+            int rows = int.Parse(userInputRows);
+            int columns = int.Parse(userInputColumns);
+            int cells = rows * columns;
+
+            Console.WriteLine("\nYou thought of a grid with " + rows + " rows and " + columns + " columns...");
+            Console.WriteLine("That gives us a grand total of " + cells + " cells!");
         }
     }
 }
