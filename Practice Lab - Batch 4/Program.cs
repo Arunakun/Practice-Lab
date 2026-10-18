@@ -91,6 +91,33 @@
             pendingTasks -= completedTasks;
 
             Console.WriteLine(".. If my math is correct, that means you have " + pendingTasks + " remaining tasks, that are pending.");
+
+            // Exercise 8
+            Console.WriteLine("\nAlright buddy, I'm gonna need a multitude of answers from you regarding posters.");
+            Console.Write("Give me a title for the poster: ");
+            string posterTitle = Console.ReadLine();
+            Console.Write("Now give me an amount of posters to print: ");
+            string userInputAmount = Console.ReadLine();
+            Console.Write("Give me an amount of posters printed per run: ");
+            string userInputPrintedPerRun = Console.ReadLine();
+            Console.Write("Now tell me how many completed runs you have done so far: ");
+            string userInputCompletedRuns = Console.ReadLine();
+
+            int totalPosters = int.Parse(userInputAmount);
+            int postersPerRun = int.Parse(userInputPrintedPerRun);
+            int completedRuns = int.Parse(userInputCompletedRuns);
+
+            int printedPosters = postersPerRun * completedRuns;
+            int remainingPosters = totalPosters - printedPosters;
+
+            Console.WriteLine("\nYour poster titled " + posterTitle + " needs to be printed a grand total of " + totalPosters + " times.");
+            Console.WriteLine("Having completed " + completedRuns + " runs with printing " + postersPerRun + " per run...");
+            Console.WriteLine("...you've so far printed " + printedPosters + " and only need to print another " + remainingPosters + " posters.");
+            
+            Console.WriteLine("\nSo.. a brief summary:");
+            Console.WriteLine("Poster title: " + posterTitle);
+            Console.WriteLine("Printed posters: " + printedPosters);
+            Console.WriteLine("Remaining posters: " + remainingPosters);
         }
     }
 }
