@@ -25,7 +25,7 @@
             Console.WriteLine("...the new temperature would be " + newTemp + " degrees Celcius.");
 
             // Exercise 3
-            Console.WriteLine("\nHow many Pokémon cards do you own? Please type it out: ");
+            Console.Write("\nHow many Pokémon cards do you own? Please type it out: ");
 
             string userInputCards = Console.ReadLine();
             int userCards = int.Parse(userInputCards);
@@ -35,6 +35,21 @@
             Console.WriteLine("\nSo, with a target of " + target + " cards to reach your personal goal...");
             Console.WriteLine("...and with your current collection holding " + userCards + " cards...");
             Console.WriteLine("...you only need " + cardsNeeded + " Pokémon cards to reach it.");
+
+            // Exercise 4
+            Console.Write("\nPlease write how many books are on the top shelf: ");
+            string userInputTopShelf = Console.ReadLine();
+            
+            Console.Write("Please write how many books are on the bottom shelf: ");
+            string userInputBottomShelf = Console.ReadLine();
+
+            int topShelfBooks = int.Parse(userInputTopShelf);
+            int bottomShelfBooks = int.Parse(userInputBottomShelf);
+            int totalBooks = topShelfBooks + bottomShelfBooks;
+
+            Console.WriteLine("\nWith " + userInputTopShelf + " books on the top shelf...");
+            Console.WriteLine("...and " + userInputBottomShelf + " books on the bottom shelf...");
+            Console.WriteLine("...you have " + totalBooks + " books in total.");
         }
     }
 }
