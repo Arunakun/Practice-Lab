@@ -50,6 +50,21 @@
             Console.WriteLine("\nWith " + userInputTopShelf + " books on the top shelf...");
             Console.WriteLine("...and " + userInputBottomShelf + " books on the bottom shelf...");
             Console.WriteLine("...you have " + totalBooks + " books in total.");
+
+            // Exercise 5
+            Console.Write("\nYou have a box of pens, please type how many were in the box initially: ");
+            string userInputPens = Console.ReadLine();
+
+            Console.Write("Please type how many pens you handed out: ");
+            string userInputHandedOut = Console.ReadLine();
+
+            int pensBox = int.Parse(userInputPens);
+            int pensHandedOut = int.Parse(userInputHandedOut);
+            int remainingPens = pensBox - pensHandedOut;
+
+            Console.WriteLine("So, the box initially had " + pensBox + " pens in the box before you opened it...");
+            Console.WriteLine("...and you gave " + pensHandedOut + " pens away to strangers...");
+            Console.WriteLine("That means, you only have " + remainingPens + " left for yourself.");
         }
     }
 }
