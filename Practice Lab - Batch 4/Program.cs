@@ -78,6 +78,19 @@
 
             Console.WriteLine("\nYou thought of a grid with " + rows + " rows and " + columns + " columns...");
             Console.WriteLine("That gives us a grand total of " + cells + " cells!");
+
+            // Exercise 7
+            Console.Write("\nYou have a set of tasks - please write how many you have: ");
+            string userInputTasks = Console.ReadLine();
+            int pendingTasks = int.Parse(userInputTasks);
+
+            Console.WriteLine("\nSo, you have " + pendingTasks + " pending tasks to do.");
+            Console.Write("Please write how many of them you have completed: ");
+            string userInputCompletedTasks = Console.ReadLine();
+            int completedTasks = int.Parse(userInputCompletedTasks);
+            pendingTasks -= completedTasks;
+
+            Console.WriteLine(".. If my math is correct, that means you have " + pendingTasks + " remaining tasks, that are pending.");
         }
     }
 }
