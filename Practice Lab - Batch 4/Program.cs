@@ -23,6 +23,18 @@
             Console.WriteLine("\nColdest temperature experienced: " + coldestTemp + " degrees Celcius.");
             Console.WriteLine("If the temperature were to rise with " + tempRise + " degrees...");
             Console.WriteLine("...the new temperature would be " + newTemp + " degrees Celcius.");
+
+            // Exercise 3
+            Console.WriteLine("\nHow many Pokémon cards do you own? Please type it out: ");
+
+            string userInputCards = Console.ReadLine();
+            int userCards = int.Parse(userInputCards);
+            int target = 500;
+            int cardsNeeded = target - userCards;
+
+            Console.WriteLine("\nSo, with a target of " + target + " cards to reach your personal goal...");
+            Console.WriteLine("...and with your current collection holding " + userCards + " cards...");
+            Console.WriteLine("...you only need " + cardsNeeded + " Pokémon cards to reach it.");
         }
     }
 }
