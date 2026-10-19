@@ -58,6 +58,34 @@
             Console.WriteLine("Distance: " + kilometres + "km traveled");
             Console.WriteLine("Duration: " + hours + " hours traveled");
             Console.WriteLine("Average speed: " + kmph + "km/h");
+
+            // Exercise 5
+            Console.WriteLine("\n\nExercise 5\n");
+            Console.Write("Okay this is going to sound weird, but give me a name for a spool of cords: ");
+            string spoolOfCords = Console.ReadLine();
+            Console.Write("And give me a starting length in metres: ");
+            string userInputSpoolLength = Console.ReadLine();
+            double spoolLength = double.Parse(userInputSpoolLength);
+
+            Console.WriteLine("\nOkay so this is the tale of the spool of cords known to mankind as " + spoolOfCords + ".");
+            Console.WriteLine("Once upon a time, there was a spool of cords that was " + spoolLength + " metres long.");
+            Console.Write("Uhh... How many metres were added to it? Please write that here: ");
+            string userInputAddition = Console.ReadLine();
+
+            double spoolAddition = double.Parse(userInputAddition);
+            spoolLength += spoolAddition;
+            Console.WriteLine("Oh that's right, " + spoolAddition + " metres were added...");
+            Console.WriteLine("That puts the total length to " + spoolLength + "m.");
+            Console.Write("Wait.. there was something about some of the spool being used as well. Please write how much was used: ");
+            string userInputUsed = Console.ReadLine();
+
+            double spoolUsed = double.Parse(userInputUsed);
+            spoolLength -= spoolUsed;
+            Console.WriteLine("I remember now.. It was " + spoolUsed + " metres that were used off of the spool!");
+            Console.WriteLine("So the remaining cord left was merely " + spoolLength + "m.");
+
+            Console.WriteLine("\nAnd thus endeth the story of " + spoolOfCords + ", changed by cheaters,");
+            Console.WriteLine("which ended being merely " + spoolLength + " metres.");
         }
     }
 }
