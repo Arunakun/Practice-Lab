@@ -29,6 +29,15 @@
 
             Console.WriteLine("\nThis container can hold " + fullWaterContainer + "L of water when full.");
             Console.WriteLine("We have used " + waterUsed + "L so far, which leaves us with " + waterLeft + "L of water.");
+
+            // Exercise 4
+            double rectangleLength = 3.25;
+            double rectangleWidth = 5.09;
+            double rectangleArea = rectangleLength * rectangleWidth;
+
+            Console.WriteLine("\nA rectangle is in front of you.");
+            Console.WriteLine("It is " + rectangleLength + "m long and " + rectangleWidth + "m wide.");
+            Console.WriteLine("With those two measurements, the area is then " + rectangleArea + "m².");
         }
     }
 }
