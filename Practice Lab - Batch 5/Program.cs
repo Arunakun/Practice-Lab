@@ -76,6 +76,34 @@
 
             waterQuantity -= waterRemoved;
             Console.WriteLine("We were hit by a heatwave, so we drank " + waterRemoved + "L water, leaving us with only " + waterQuantity + "L water.");
+
+            // Exercise 8
+            Console.Write("\nYou went on a walk recently. Please tell me what you would like to name the route: ");
+            string routeTitle = Console.ReadLine();
+            
+            double routeDistance = 17.34;
+            double firstSectionDistance = 4.18;
+            double secondSectionDistance = 6.21;
+            double hoursWalked = 2.74;
+
+            double distanceCompleted = firstSectionDistance + secondSectionDistance;
+            double distanceRemaining = routeDistance - distanceCompleted;
+            double distancePerHour = distanceCompleted / hoursWalked;
+
+            Console.WriteLine("\nSo.. The route, " + routeTitle + ", is " + routeDistance + "km long.");
+            Console.WriteLine("You walked " + firstSectionDistance + "km before taking your first break.");
+            Console.WriteLine("You then proceeded to walk another " + secondSectionDistance + "km before ending the day.");
+            Console.WriteLine("In total, you walked for " + hoursWalked + " hours.");
+
+            Console.WriteLine("That means, that you walked " + distanceCompleted + "km on your first day.");
+            Console.WriteLine("This leaves you with " + distanceRemaining + "km on the second day.");
+            Console.WriteLine("Walking at a pace of " + distancePerHour + "km/h, it shouldn't take long to finish.");
+
+            Console.WriteLine("\nSo.. A brief summary:");
+            Console.WriteLine("Route: " + routeTitle);
+            Console.WriteLine("Kilometres walked: " + distanceCompleted + "km");
+            Console.WriteLine("Kilometres remaining: " + distanceRemaining + "km");
+            Console.WriteLine("Walking speed: " + distancePerHour + "km/h");
         }
     }
 }
