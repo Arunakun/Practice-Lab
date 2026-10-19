@@ -27,6 +27,21 @@
             Console.WriteLine("\nYou gave me a starting temperature of " + celsius + "ºC");
             Console.WriteLine("You also gave me a temperature rise of " + rise + "ºC");
             Console.WriteLine("This would give a new temperature of " + newTemp + "ºC");
+
+            // Exercise 3
+            Console.WriteLine("\n\nExercise 3\n");
+            Console.Write("Think of an imaginary panel. Give me its length in metres: ");
+            string userInputLength = Console.ReadLine();
+            Console.Write("Now give me its width in metres: ");
+            string userInputWidth = Console.ReadLine();
+
+            double length = double.Parse(userInputLength);
+            double width = double.Parse(userInputWidth);
+            double area = length * width;
+
+            Console.WriteLine("\nThe length of the panel is " + length + "m");
+            Console.WriteLine("The width of the panel is " + width + "m");
+            Console.WriteLine("The area of the panel is " + area + "m²");
         }
     }
 }
