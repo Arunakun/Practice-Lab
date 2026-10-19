@@ -63,6 +63,19 @@
 
             Console.WriteLine("\n.. and these two numbers, " + firstValueDouble + " and " + secondValueDouble + ", are both doubles.");
             Console.WriteLine("Dividing the bigger with the smaller, gives us " + doubleDivision);
+
+            // Exercise 7
+            double waterQuantity = 8.34;
+            double waterAdded = 5.92;
+            double waterRemoved = 13.21;
+
+            Console.WriteLine("\nWe have a container in the office, currently containing " + waterQuantity + "L water.");
+            
+            waterQuantity += waterAdded;
+            Console.WriteLine("Weekly maintenance added " + waterAdded + "L to it so it's now containing " + waterQuantity + "L water.");
+
+            waterQuantity -= waterRemoved;
+            Console.WriteLine("We were hit by a heatwave, so we drank " + waterRemoved + "L water, leaving us with only " + waterQuantity + "L water.");
         }
     }
 }
