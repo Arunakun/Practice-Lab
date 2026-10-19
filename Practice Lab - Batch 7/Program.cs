@@ -44,6 +44,31 @@
 
             score += scoreGain;
             Console.WriteLine("Adding " + scoreGain + " points to the score gives us " + score + " points in total.");
+
+            // Exercise 4
+            string reportCaption = "I have no idea what a report caption is, so pretend this is a report caption.";
+            Console.WriteLine("\n\nExercise 4\n");
+            Console.WriteLine(reportCaption);
+
+            {
+                Console.Write("Please give me a title for a poster: ");
+                string title = Console.ReadLine();
+                Console.Write("Please give me an amount of copies per bundle of posters: ");
+                string userInputPostersPerBundle = Console.ReadLine();
+                Console.Write("And finally, please give me an amount of bundles copied: ");
+                string userInputCountOfBundles = Console.ReadLine();
+
+                int postersPerBundle = int.Parse(userInputPostersPerBundle);
+                int countOfBundles = int.Parse(userInputCountOfBundles);
+                int totalPosters = postersPerBundle * countOfBundles;
+
+                Console.WriteLine("\nAlright, per your suggestion, here's an overview of the poster titled \"" + title + "\":");
+                Console.WriteLine("In every bundle, there are " + postersPerBundle + " posters.");
+                Console.WriteLine(countOfBundles + " bundles of posters were printed.");
+                Console.WriteLine("That gives us a grand total of " + totalPosters + " printed.");
+            }
+
+            Console.WriteLine(reportCaption);
         }
     }
 }
