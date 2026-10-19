@@ -55,8 +55,8 @@
             double kmph = kilometres / hours;
 
             Console.WriteLine("\nHere's a summary of the journey, you told me about:");
-            Console.WriteLine("Distance in kilometres: " + kilometres + "km traveled");
-            Console.WriteLine("Duration in hours: " + hours + " hours traveled");
+            Console.WriteLine("Distance: " + kilometres + "km traveled");
+            Console.WriteLine("Duration: " + hours + " hours traveled");
             Console.WriteLine("Average speed: " + kmph + "km/h");
         }
     }
