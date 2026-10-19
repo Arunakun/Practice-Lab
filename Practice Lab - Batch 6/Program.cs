@@ -41,6 +41,18 @@ namespace Practice_Lab___Batch_6
             Console.WriteLine("Imagine walking down a corridor in this section: " + section);
             Console.WriteLine("You walk past doors until you find the number you're looking for: " + door);
             Console.WriteLine("You check the room.. it's clear. You mark the door with this: " + punctuationMark);
+
+            // Exercise 4
+            char newSection = 'N';
+            char station = '3';
+
+            Console.WriteLine("\n\nExercise 4\n");
+            Console.WriteLine("We have encountered enemy forces in section " + newSection + ". Stop.");
+            Console.WriteLine("Need immediate backup at station " + station + ". Stop.");
+
+            newSection = 'A';
+            Console.WriteLine("\nEnemy forces have cleared out at station " + station + ". Stop.");
+            Console.WriteLine("Return to section " + newSection + " and wait for new orders. Stop.");
         }
     }
 }
