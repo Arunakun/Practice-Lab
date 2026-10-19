@@ -101,6 +101,38 @@
             Console.WriteLine("New Zone: " + standZone);
             Console.WriteLine("Open: " + isStandOpen);
             Console.WriteLine("Area of stand: " + standArea + " square metres");
+
+            // Exercise 6
+            Console.WriteLine("\n\nExercise 6 (of batch 6, but actually this is exercise 6 of this batch (batch 7))\n");
+            Console.Write("We need a name for our newest exhibitor, give me a suggestion: ");
+            string exhibitorNameAgain = Console.ReadLine();
+
+            Console.Write("Hmm.. I like the sound of that. Now, tell me how many leaflets it has: ");
+            string userInputLeafletsAgain = Console.ReadLine();
+            int leafletsAgain = int.Parse(userInputLeafletsAgain);
+            char standZoneAgain = 'C';
+            bool isStandOpenAgain = false;
+
+            double standlengthagain = 2.37;
+            double standWidthAgain = 3.59;
+            double standAreaAgain = standlengthagain * standWidthAgain;
+
+            Console.WriteLine("\nName of stand: " + exhibitorNameAgain);
+            Console.WriteLine("Amount of leaflets: " + leafletsAgain);
+            Console.WriteLine("Zone: " + standZoneAgain);
+            Console.WriteLine("Open: " + isStandOpenAgain);
+            Console.WriteLine("Length: " + standlengthagain + " metres");
+            Console.WriteLine("Width: " + standWidthAgain + " metres");
+            Console.WriteLine("Area: " + standAreaAgain + " square metres");
+
+            standZoneAgain = 'P';
+            isStandOpenAgain = true;
+
+            Console.WriteLine("\nUpdated summary of " + exhibitorNameAgain + ":");
+            Console.WriteLine("Amount of leaflets: " + leafletsAgain);
+            Console.WriteLine("New Zone: " + standZoneAgain);
+            Console.WriteLine("Open: " + isStandOpenAgain);
+            Console.WriteLine("Area of stand: " + standAreaAgain + " square metres");
         }
     }
 }
