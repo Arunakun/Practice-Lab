@@ -12,6 +12,16 @@
                 Console.WriteLine(message);
             }
             Console.WriteLine("Yes I wrote it twice, what are you gonna do about it? It's a good Pokémon, I like it!");
+
+            // Exercise 2
+            string imaginaryPlaceName = "Marrowbean";
+            Console.WriteLine("\n\nExercise 2\n");
+            Console.WriteLine("Welcome to " + imaginaryPlaceName + " - a place of wonders!");
+            {
+                string activityName = "gaming";
+                Console.WriteLine("The main activity to do around here is " + activityName);
+            }
+            Console.WriteLine("We hope you like it here in " + imaginaryPlaceName + "!");
         }
     }
 }
