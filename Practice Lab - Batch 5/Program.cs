@@ -47,6 +47,22 @@
             Console.WriteLine("\nYou've traveled far today, my friend. " + kilometresTraveled + "km to be exact.");
             Console.WriteLine("With having spent only " + hoursTraveled + " hours to get there...");
             Console.WriteLine("You traveled with a speed of " + kilometresPerHour + "km/h.");
+
+            // Exercise 6
+            int firstValue = 17;
+            int secondValue = 13;
+
+            double firstValueDouble = firstValue;
+            double secondValueDouble = secondValue;
+
+            double intDivision = firstValue / secondValue;
+            double doubleDivision = firstValueDouble / secondValueDouble;
+
+            Console.WriteLine("\nThese two numbers, " + firstValue + " and " + secondValue + ", are both integers.");
+            Console.WriteLine("Dividing the bigger with the smaller, gives us " + intDivision);
+
+            Console.WriteLine("\n.. and these two numbers, " + firstValueDouble + " and " + secondValueDouble + ", are both doubles.");
+            Console.WriteLine("Dividing the bigger with the smaller, gives us " + doubleDivision);
         }
     }
 }
