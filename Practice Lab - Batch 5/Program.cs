@@ -38,6 +38,15 @@
             Console.WriteLine("\nA rectangle is in front of you.");
             Console.WriteLine("It is " + rectangleLength + "m long and " + rectangleWidth + "m wide.");
             Console.WriteLine("With those two measurements, the area is then " + rectangleArea + "m².");
+
+            // Exercise 5
+            double kilometresTraveled = 449.32;
+            double hoursTraveled = 5.69;
+            double kilometresPerHour = kilometresTraveled / hoursTraveled;
+
+            Console.WriteLine("\nYou've traveled far today, my friend. " + kilometresTraveled + "km to be exact.");
+            Console.WriteLine("With having spent only " + hoursTraveled + " hours to get there...");
+            Console.WriteLine("You traveled with a speed of " + kilometresPerHour + "km/h.");
         }
     }
 }
