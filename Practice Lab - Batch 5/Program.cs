@@ -21,6 +21,14 @@
             Console.WriteLine("\nWe have two stretches on a map.");
             Console.WriteLine("The length of the first one is " + shorterDistance + "km, length of the other is " + longerDistance + "km.");
             Console.WriteLine("Added together, the total length is " + totalDistance + "km.");
+
+            // Exercise 3
+            double fullWaterContainer = 15.67;
+            double waterUsed = 5.53;
+            double waterLeft = fullWaterContainer - waterUsed;
+
+            Console.WriteLine("\nThis container can hold " + fullWaterContainer + "L of water when full.");
+            Console.WriteLine("We have used " + waterUsed + "L so far, which leaves us with " + waterLeft + "L of water.");
         }
     }
 }
