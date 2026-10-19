@@ -42,6 +42,22 @@
             Console.WriteLine("\nThe length of the panel is " + length + "m");
             Console.WriteLine("The width of the panel is " + width + "m");
             Console.WriteLine("The area of the panel is " + area + "m²");
+
+            // Exercise 4
+            Console.WriteLine("\n\nExercise 4\n");
+            Console.Write("Think of a journey, and give me the duration in kilometres: ");
+            string userInputKilometres = Console.ReadLine();
+            Console.Write("Now give me the duration in hours: ");
+            string userInputHours = Console.ReadLine();
+
+            double kilometres = double.Parse(userInputKilometres);
+            double hours = double.Parse(userInputHours);
+            double kmph = kilometres / hours;
+
+            Console.WriteLine("\nHere's a summary of the journey, you told me about:");
+            Console.WriteLine("Distance in kilometres: " + kilometres + "km traveled");
+            Console.WriteLine("Duration in hours: " + hours + " hours traveled");
+            Console.WriteLine("Average speed: " + kmph + "km/h");
         }
     }
 }
