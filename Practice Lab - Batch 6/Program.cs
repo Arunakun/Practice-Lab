@@ -53,6 +53,20 @@ namespace Practice_Lab___Batch_6
             newSection = 'A';
             Console.WriteLine("\nEnemy forces have cleared out at station " + station + ". Stop.");
             Console.WriteLine("Return to section " + newSection + " and wait for new orders. Stop.");
+
+            // Exercise 5
+            string trackingIdentifier = "0C3301";
+            int parcelCount = 73;
+            double parcelMass = 67.52;
+            bool areParcelsInspected = false;
+            char dispatchZone = 'Z';
+
+            Console.WriteLine("\n\nExercise 5\n");
+            Console.WriteLine("We are currently tracking a batch of parcels, with the following identifier: " + trackingIdentifier);
+            Console.WriteLine("There are a total of " + parcelCount + " parcels in this batch.");
+            Console.WriteLine("The total weight of said parcels is " + parcelMass + "kg.");
+            Console.WriteLine("The current status of whether they have been inspected or not: " + areParcelsInspected);
+            Console.WriteLine("The parcels, once cleared, are expected to be dispatched to zone " + dispatchZone + ".");
         }
     }
 }
