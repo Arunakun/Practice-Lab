@@ -1,10 +1,13 @@
 <Solution>
-  <Project Path="Practice Lab - Batch 2/Practice Lab - Batch 2.csproj" />
-  <Project Path="Practice Lab - Batch 3/Practice Lab - Batch 3.csproj" Id="8b1f0644-3ef3-4aaf-88a9-915730f8af12" />
-  <Project Path="Practice Lab - Batch 4/Practice Lab - Batch 4.csproj" Id="331e033a-7c37-4ef5-90a7-d10d2645f2f6" />
-  <Project Path="Practice Lab - Batch 5/Practice Lab - Batch 5.csproj" Id="3828cbee-305e-4a70-a197-562dd5d2d5f9" />
-  <Project Path="Practice Lab - Batch 6/Practice Lab - Batch 6.csproj" Id="12b4437e-9c03-4d08-a95e-3154b392032e" />
-  <Project Path="Practice Lab - Batch 7/Practice Lab - Batch 7.csproj" Id="3a0507b2-9b4e-49c9-82f8-ac606d316f2b" />
-  <Project Path="Practice Lab - Batch 8/Practice Lab - Batch 8.csproj" Id="a26aa7cf-2152-4d46-8571-04dc42376613" />
-  <Project Path="Practice Lab/Practice Lab - Batch 1.csproj" />
+  <Folder Name="/Week 6/">
+    <Project Path="Practice Lab - Batch 2/Practice Lab - Batch 2.csproj" />
+    <Project Path="Practice Lab - Batch 3/Practice Lab - Batch 3.csproj" Id="8b1f0644-3ef3-4aaf-88a9-915730f8af12" />
+    <Project Path="Practice Lab - Batch 4/Practice Lab - Batch 4.csproj" Id="331e033a-7c37-4ef5-90a7-d10d2645f2f6" />
+    <Project Path="Practice Lab - Batch 5/Practice Lab - Batch 5.csproj" Id="3828cbee-305e-4a70-a197-562dd5d2d5f9" />
+    <Project Path="Practice Lab - Batch 6/Practice Lab - Batch 6.csproj" Id="12b4437e-9c03-4d08-a95e-3154b392032e" />
+    <Project Path="Practice Lab - Batch 7/Practice Lab - Batch 7.csproj" Id="3a0507b2-9b4e-49c9-82f8-ac606d316f2b" />
+    <Project Path="Practice Lab - Batch 8/Practice Lab - Batch 8.csproj" Id="a26aa7cf-2152-4d46-8571-04dc42376613" />
+    <Project Path="Practice Lab - Batch 9/Practice Lab - Batch 9.csproj" Id="510a18a6-40ca-4fa5-bc60-6cb9a335e068" />
+    <Project Path="Practice Lab/Practice Lab - Batch 1.csproj" />
+  </Folder>
 </Solution>
