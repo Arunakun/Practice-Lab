@@ -47,6 +47,40 @@
             Console.WriteLine("Total item count: " + itemsTotal);
             Console.WriteLine("Damaged item count: " + damagedItems);
             Console.WriteLine("Usable item count: " + usableItems);
+
+
+            // Exercise 2
+            Console.WriteLine("\n\n\nExercise 2\n");
+            Console.Write("You were recently on a roadtrip. Tell me what you'd call this journey: ");
+            string journeyName = Console.ReadLine();
+            
+            Console.Write("I remember you telling me it was over 2 parts. Tell me how far you traveled on part 1 in kilometres: ");
+            string userInputDistanceFirstPart = Console.ReadLine();
+            Console.Write("Tell me how long it took you in hours: ");
+            string userInputDurationFirstPart = Console.ReadLine();
+            Console.Write("Now tell me how far you traveled on the second part of the journey in kilometres: ");
+            string userInputDistanceSecondPart = Console.ReadLine();
+            Console.Write("Please tell me how long that took you in hours: ");
+            string userInputDurationSecondPart = Console.ReadLine();
+
+            double distanceFirstPart = double.Parse(userInputDistanceFirstPart);
+            double distanceSecondPart = double.Parse(userInputDistanceSecondPart);
+            double durationFirstPart = double.Parse(userInputDurationFirstPart);
+            double durationSecondPart = double.Parse(userInputDurationSecondPart);
+
+            double totalDistance = distanceFirstPart + distanceSecondPart;
+            double totalDuration = durationFirstPart + durationSecondPart;
+            double averageSpeed = totalDistance / totalDuration;
+
+            Console.WriteLine("\nJourney summary:");
+            Console.WriteLine("Name of journey: " + journeyName);
+            Console.WriteLine("\nPart 1 distance: " + distanceFirstPart + "km");
+            Console.WriteLine("Part 2 distance: " + distanceSecondPart + "km");
+            Console.WriteLine("\nPart 1 duration: " + durationFirstPart + " hours");
+            Console.WriteLine("Part 2 duration: " + durationSecondPart + " hours");
+            Console.WriteLine("\nTotal distance: " + totalDistance + "km");
+            Console.WriteLine("Total duration: " + totalDuration + " hours");
+            Console.WriteLine("Average speed: " + averageSpeed + "km/h");
         }
     }
 }
