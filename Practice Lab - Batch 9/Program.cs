@@ -81,6 +81,62 @@
             Console.WriteLine("\nTotal distance: " + totalDistance + "km");
             Console.WriteLine("Total duration: " + totalDuration + " hours");
             Console.WriteLine("Average speed: " + averageSpeed + "km/h");
+
+
+            // Exercise 3
+            string reportHeading = "Reading Room Report (RRR)";
+
+            Console.WriteLine("\n\n\nExercise 3\n");
+            Console.WriteLine(reportHeading);
+
+            {
+                Console.Write("Give me a name for this reading room: ");
+                string readingRoomName = Console.ReadLine();
+
+                Console.Write("Tell me how many reserved seats there are: ");
+                string userInputReservedSeats = Console.ReadLine();
+                int reservedSeats = int.Parse(userInputReservedSeats);
+
+                Console.Write("Tell me how many unreserved seats there are: ");
+                string userInputUnreservedSeats = Console.ReadLine();
+                int unreservedSeats = int.Parse(userInputUnreservedSeats);
+
+                Console.Write("Tell me the room's length in metres: ");
+                string userInputLength = Console.ReadLine();
+                double length = double.Parse(userInputLength);
+
+                Console.Write("Tell me the room's width in metres: ");
+                string userInputWidth = Console.ReadLine();
+                double width = double.Parse(userInputWidth);
+
+                int seatingCapacity = reservedSeats + unreservedSeats;
+                double area = length * width;
+                char sectionMarker = 'G';
+                bool isRoomOpen = false;
+
+                Console.WriteLine("\n~~ Initial report of reading room ~~");
+                Console.WriteLine("Room name: \"" + readingRoomName + "\"");
+                Console.WriteLine("Reserved seats: " + reservedSeats);
+                Console.WriteLine("Unreserved seats: " + unreservedSeats);
+                Console.WriteLine("Max capacity: " + seatingCapacity);
+                Console.WriteLine("Length: " + length + "m");
+                Console.WriteLine("Width: " + width + "m");
+                Console.WriteLine("Floor area: " + area + "m²");
+                Console.WriteLine("Section: " + sectionMarker);
+                Console.WriteLine("Room open: " + isRoomOpen);
+
+                sectionMarker = 'J';
+                isRoomOpen = true;
+
+                Console.WriteLine("\n~~ 2nd report of reading room ~~");
+                Console.WriteLine("Room name: \"" + readingRoomName + "\"");
+                Console.WriteLine("Max capacity: " + seatingCapacity);
+                Console.WriteLine("Floor area: " + area + "m²");
+                Console.WriteLine("Section: " + sectionMarker);
+                Console.WriteLine("Room open: " + isRoomOpen);
+            }
+
+            Console.WriteLine(reportHeading);
         }
     }
 }
