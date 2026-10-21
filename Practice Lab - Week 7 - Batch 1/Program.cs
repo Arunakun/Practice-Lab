@@ -69,6 +69,40 @@
             Console.WriteLine("Runtime type of your rowsPerSeat input: " + userInputRowsOfSeats.GetType());
             Console.WriteLine("Runtime type of the converted input: " + rowsOfSeats.GetType());
             Console.WriteLine("Runtime type of the capacity: " + seatingCapacity.GetType());
+
+            // Exercise 5
+            Console.WriteLine("\n\nWeek 7, Batch 1, Exercise 5\n");
+            Console.Write("Give me a name for a station: ");
+            var stationName = Console.ReadLine();
+            Console.Write("Give me its current visitor count: ");
+            var userInputVisitorCount = Console.ReadLine();
+            Console.Write("Give me a temperature in Celsius: ");
+            var userInputTemperature = Console.ReadLine();
+
+            var visitorCount = int.Parse(userInputVisitorCount);
+            var temperature = double.Parse(userInputTemperature);
+            var zoneMarker = 'O';
+            var isStationOpen = false;
+
+            Console.WriteLine("\n~~ Station report ~~\n");
+            Console.WriteLine("Name: " + stationName);
+            Console.WriteLine("Visitor count: " + visitorCount + " - runtime type: " + visitorCount.GetType());
+            Console.WriteLine("Temperature: " + temperature + "°C");
+            Console.WriteLine("Zone: " + zoneMarker);
+            Console.WriteLine("Open status: " + isStationOpen);
+
+            var arrivingGroup = 85;
+            visitorCount += arrivingGroup;
+            zoneMarker = 'H';
+            isStationOpen = true;
+
+            Console.WriteLine("\n~~ Updated station report ~~\n");
+            Console.WriteLine("Name: " + stationName);
+            Console.WriteLine("Temperature: " + temperature + "°C");
+            Console.WriteLine("Size of newly arrived group: " + arrivingGroup);
+            Console.WriteLine("Updated visitor count: " + visitorCount + " - runtime type: " + visitorCount.GetType());
+            Console.WriteLine("Updated zone: " + zoneMarker);
+            Console.WriteLine("Open status: " + isStationOpen);
         }
     }
 }
