@@ -10,24 +10,24 @@
             var visitDuration = 3.14;
 
             Console.WriteLine("Week 7, Batch 1, Exercise 1\n");
-            Console.WriteLine("Todays VIP: " + visitorName + " - runtime type is " + visitorName.GetType());
-            Console.WriteLine("Starting pass number: #" + passNumber + " - runtime type is " + passNumber.GetType());
-            Console.WriteLine("Duration of visit: " + visitDuration + " hours - runtime type is " + visitDuration.GetType());
+            Console.WriteLine($"Todays VIP: {visitorName} - runtime type is {visitorName.GetType()}");
+            Console.WriteLine($"Starting pass number: #{passNumber} - runtime type is {passNumber.GetType()}");
+            Console.WriteLine($"Duration of visit: {visitDuration} hours - runtime type is {visitDuration.GetType()}");
 
             // Exercise 2
             var isSignalActive = true;
             var signalMarker = 'Q';
 
             Console.WriteLine("\n\nWeek 7, Batch 1, Exercise 2\n");
-            Console.WriteLine("State of signal: " + isSignalActive + " - runtime type is " + isSignalActive.GetType());
-            Console.WriteLine("Signal marker: " + signalMarker + " - runtime type is " + signalMarker.GetType());
+            Console.WriteLine($"State of signal: {isSignalActive} - runtime type is {isSignalActive.GetType()}");
+            Console.WriteLine($"Signal marker: {signalMarker} - runtime type is {signalMarker.GetType()}");
 
             isSignalActive = false;
             signalMarker = 'I';
 
             Console.WriteLine("\nUpdate to signal and marker");
-            Console.WriteLine("State of signal: " + isSignalActive + " - runtime type is " + isSignalActive.GetType());
-            Console.WriteLine("Signal marker: " + signalMarker + " - runtime type is " + signalMarker.GetType());
+            Console.WriteLine($"State of signal: {isSignalActive} - runtime type is {isSignalActive.GetType()}");
+            Console.WriteLine($"Signal marker: {signalMarker} - runtime type is {signalMarker.GetType()}");
 
             // Exercise 3
             var trayCount = 16;
@@ -39,13 +39,13 @@
             var trayArea = trayWidth * trayLength;
 
             Console.WriteLine("\n\nWeek 7, Batch 1, Exercise 3\n");
-            Console.WriteLine("There are " + trayCount + " trays");
-            Console.WriteLine("Each tray has " + itemsPerTray + " items");
-            Console.WriteLine("There are " + totalItemCount + " items in total - runtime type is " + totalItemCount.GetType());
+            Console.WriteLine($"There are {trayCount} trays");
+            Console.WriteLine($"Each tray has {itemsPerTray} items");
+            Console.WriteLine($"There are {totalItemCount} items in total - runtime type is {totalItemCount.GetType()}");
 
-            Console.WriteLine("\nEach tray is " + trayWidth + " metres wide");
-            Console.WriteLine("Each tray is " + trayLength + " metres long");
-            Console.WriteLine("Each tray has an area of " + trayArea + "m² - runtime typs is " + trayArea.GetType());
+            Console.WriteLine($"\nEach tray is {trayWidth} metres wide");
+            Console.WriteLine($"Each tray is {trayLength} metres long");
+            Console.WriteLine($"Each tray has an area of {trayArea}m² - runtime typs is {trayArea.GetType()}");
 
             // Exercise 4
             Console.WriteLine("\n\nWeek 7, Batch 1, Exercise 4\n");
@@ -61,14 +61,14 @@
             var seatingCapacity = rowsOfSeats * seatsPerRow;
 
             Console.WriteLine("\n~~ Event summary ~~");
-            Console.WriteLine("Name of event: " + eventName);
-            Console.WriteLine("Rows of seats: " + userInputRowsOfSeats);
-            Console.WriteLine("Seats per row: " + userInputSeatsPerRow);
+            Console.WriteLine($"Name of event: {eventName}");
+            Console.WriteLine($"Rows of seats: {userInputRowsOfSeats}");
+            Console.WriteLine($"Seats per row: {userInputSeatsPerRow}");
 
-            Console.WriteLine("\nSeating capacity: " + rowsOfSeats + " * " + seatsPerRow + " = " + seatingCapacity);
-            Console.WriteLine("Runtime type of your rowsPerSeat input: " + userInputRowsOfSeats.GetType());
-            Console.WriteLine("Runtime type of the converted input: " + rowsOfSeats.GetType());
-            Console.WriteLine("Runtime type of the capacity: " + seatingCapacity.GetType());
+            Console.WriteLine($"\nSeating capacity: {rowsOfSeats} * {seatsPerRow} = {seatingCapacity}");
+            Console.WriteLine($"Runtime type of your rowsPerSeat input: {userInputRowsOfSeats.GetType()}");
+            Console.WriteLine($"Runtime type of the converted input: {rowsOfSeats.GetType()}");
+            Console.WriteLine($"Runtime type of the capacity: {seatingCapacity.GetType()}");
 
             // Exercise 5
             Console.WriteLine("\n\nWeek 7, Batch 1, Exercise 5\n");
@@ -85,11 +85,11 @@
             var isStationOpen = false;
 
             Console.WriteLine("\n~~ Station report ~~\n");
-            Console.WriteLine("Name: " + stationName);
-            Console.WriteLine("Visitor count: " + visitorCount + " - runtime type: " + visitorCount.GetType());
-            Console.WriteLine("Temperature: " + temperature + "°C");
-            Console.WriteLine("Zone: " + zoneMarker);
-            Console.WriteLine("Open status: " + isStationOpen);
+            Console.WriteLine($"Name: {stationName}");
+            Console.WriteLine($"Visitor count: {visitorCount} - runtime type: {visitorCount.GetType()}");
+            Console.WriteLine($"Temperature: {temperature}°C");
+            Console.WriteLine($"Zone: {zoneMarker}");
+            Console.WriteLine($"Open status: {isStationOpen}");
 
             var arrivingGroup = 85;
             visitorCount += arrivingGroup;
@@ -97,12 +97,12 @@
             isStationOpen = true;
 
             Console.WriteLine("\n~~ Updated station report ~~\n");
-            Console.WriteLine("Name: " + stationName);
-            Console.WriteLine("Temperature: " + temperature + "°C");
-            Console.WriteLine("Size of newly arrived group: " + arrivingGroup);
-            Console.WriteLine("Updated visitor count: " + visitorCount + " - runtime type: " + visitorCount.GetType());
-            Console.WriteLine("Updated zone: " + zoneMarker);
-            Console.WriteLine("Open status: " + isStationOpen);
+            Console.WriteLine($"Name: {stationName}");
+            Console.WriteLine($"Temperature: {temperature}°C");
+            Console.WriteLine($"Size of newly arrived group: {arrivingGroup}");
+            Console.WriteLine($"Updated visitor count: {visitorCount} - runtime type: {visitorCount.GetType()}");
+            Console.WriteLine($"Updated zone: {zoneMarker}");
+            Console.WriteLine($"Open status: {isStationOpen}");
         }
     }
 }
