@@ -10,4 +10,7 @@
     <Project Path="Practice Lab - Batch 9/Practice Lab - Batch 9.csproj" Id="510a18a6-40ca-4fa5-bc60-6cb9a335e068" />
     <Project Path="Practice Lab/Practice Lab - Batch 1.csproj" />
   </Folder>
+  <Folder Name="/Week 7/">
+    <Project Path="Practice Lab - Week 7 - Batch 1/Practice Lab - Week 7 - Batch 1.csproj" Id="1131e7cc-c1bf-43e4-813b-94b41982d7ed" />
+  </Folder>
 </Solution>
