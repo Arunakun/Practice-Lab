@@ -46,6 +46,29 @@
             Console.WriteLine("\nEach tray is " + trayWidth + " metres wide");
             Console.WriteLine("Each tray is " + trayLength + " metres long");
             Console.WriteLine("Each tray has an area of " + trayArea + "m² - runtime typs is " + trayArea.GetType());
+
+            // Exercise 4
+            Console.WriteLine("\n\nWeek 7, Batch 1, Exercise 4\n");
+            Console.Write("Give me a name for an event: ");
+            var eventName = Console.ReadLine();
+            Console.Write("Tell me how many rows of seats there are: ");
+            var userInputRowsOfSeats = Console.ReadLine();
+            Console.Write("Tell me how many seats there are per row: ");
+            var userInputSeatsPerRow = Console.ReadLine();
+
+            var rowsOfSeats = int.Parse(userInputRowsOfSeats);
+            var seatsPerRow = int.Parse(userInputSeatsPerRow);
+            var seatingCapacity = rowsOfSeats * seatsPerRow;
+
+            Console.WriteLine("\n~~ Event summary ~~");
+            Console.WriteLine("Name of event: " + eventName);
+            Console.WriteLine("Rows of seats: " + userInputRowsOfSeats);
+            Console.WriteLine("Seats per row: " + userInputSeatsPerRow);
+
+            Console.WriteLine("\nSeating capacity: " + rowsOfSeats + " * " + seatsPerRow + " = " + seatingCapacity);
+            Console.WriteLine("Runtime type of your rowsPerSeat input: " + userInputRowsOfSeats.GetType());
+            Console.WriteLine("Runtime type of the converted input: " + rowsOfSeats.GetType());
+            Console.WriteLine("Runtime type of the capacity: " + seatingCapacity.GetType());
         }
     }
 }
